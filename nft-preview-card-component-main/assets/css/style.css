@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* text color: */
+    --Blue-500: hsl(215, 51%, 70%);
+    --Cyan-400: hsl(178, 100%, 50%);
+    --White: hsl(0, 0%, 100%);
+
+    /* bg color: */
+    --Blue-main: hsl(217, 54%, 11%);
+    --Blue-card: hsl(216, 50%, 16%);
+    --Blue-line: hsl(215, 32%, 27%);
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(../font/static/Outfit-Regular.ttf);
+}
+
+@font-face {
+    font-family: Outfit-bold;
+    src: url(../font/static/Outfit-Bold.ttf);
+}
+
+body {
+    background-color: var(--Blue-main);
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--Blue-card);
+    margin: auto;
+    margin-top: 15vh;
+    width: 370px;
+    padding: 30px;
+    text-align: left;
+    border-radius: 20px;
+    line-height: 1.5;
+    box-shadow: 0 40px 100px;
+}
+
+.image-equilibrium {
+    border-radius: 10px;
+    display: block;
+    width: 310px;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: var(--White);
+    font-family: Outfit-bold;
+    font-size: 18px;
+}
+
+p {
+    color: var(--Blue-500);
+    font-family: Outfit;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: var(--Cyan-400);
+    font-family: Outfit-bold;
+    font-size: 18px;
+}
+
+.time {
+    color: var(--Blue-500);
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+.line {
+    display: flex;
+    border-top: 1px solid var(--Blue-line);
+    padding-top: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.image-avatar {
+    border-radius: 50%;
+    width: 30px;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+
+.creation {
+    color: var(--Blue-500);
+    font-family: Outfit;
+    font-size: 18px;
+    align-self: center;
+}
+
+.creator {
+    color: var(--White);
+    font-family: Outfit;
+    font-size: 18px;
+    align-self: center;
+    margin-left: 5px;
+}

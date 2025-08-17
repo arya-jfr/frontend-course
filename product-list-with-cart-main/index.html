@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link
+            href="./assets/bootstrap/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <title>Frontend Mentor | Product list with cart</title>
+    </head>
+    <body>
+        <div class="desserts">
+            <h1>Desserts</h1>
+            <div class="dessert-cards">
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-waffle-desktop.jpg"
+                        alt="image-waffle"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Waffle</h2>
+                    <p>Waffle with Berries</p>
+                    <div class="price">$6.50</div>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-creme-brulee-desktop.jpg"
+                        alt="image-creme-brulee"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Crème Brûlée</h2>
+                    <p>Vanilla Bean Crème Brûlée</p>
+                    <div class="price">$7.00</div>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-macaron-desktop.jpg"
+                        alt="image-macaron"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Macaron</h2>
+                    <p>Macaron Mix of Five</p>
+                    <div class="price">$8.00</div>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-tiramisu-desktop.jpg"
+                        alt="image-tiramisu"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Tiramisu</h2>
+                    <p>Classic Tiramisu</p>
+                    <div class="price">$5.50</div>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-baklava-desktop.jpg"
+                        alt="image-baklava"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Baklava</h2>
+                    <p>Pistachio Baklava</p>
+                    <div class="price">$4.00</div>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-meringue-desktop.jpg"
+                        alt="image-meringue"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Pie</h2>
+                    <p>Lemon Meringue Pie</p>
+                    <div class="price">$5.00</div>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-cake-desktop.jpg"
+                        alt="image-cake"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Cake</h2>
+                    <p>Red Velvet Cake</p>
+                    <div class="price">$4.50</div>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-brownie-desktop.jpg"
+                        alt="image-brownie"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Brownie</h2>
+                    <p>Salted Caramel Brownie</p>
+                    <div class="price">$4.50</div>
+                </div>
+
+                <div class="product-card">
+                    <img
+                        class="card-image"
+                        src="./assets/images/image-panna-cotta-desktop.jpg"
+                        alt="image-panna-cotta"
+                    />
+
+                    <!-- Button trigger modal -->
+                    <button
+                        type="button"
+                        class="btn btn-primary card-btn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                    >
+                        <img
+                            src="./assets/images/icon-add-to-cart.svg"
+                            alt="icon-add-to-cart"
+                        />Add to Cart
+                    </button>
+
+                    <h2>Panna Cotta</h2>
+                    <p>Vanilla Panna Cotta</p>
+                    <div class="price">$6.50</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="customer-card">
+            <h3>Your Cart (0)</h3>
+            <img
+                src="./assets/images/illustration-empty-cart.svg"
+                alt="illustration-empty-cart"
+            />
+            <p>Your added items will appear here</p>
+        </div>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img
+                            src="./assets/images/icon-order-confirmed.svg"
+                            alt="icon-order-confirmed"
+                        />
+                        <div class="modal-title">
+                            <h2>Order Confirmed</h2>
+                            <p>We hope you enjoy your food!</p>
+                        </div>
+                        <div class="orders">
+                            <div class="order-item">
+                                <div class="order-info">
+                                    <img
+                                        src="./assets/images/image-tiramisu-thumbnail.jpg"
+                                        alt="image-tiramisu"
+                                    />
+                                    <div class="order-details">
+                                        <h4>Classic Tiramisu</h4>
+                                        <div class="order-numberdand-fee">
+                                            <div class="number">1x</div>
+                                            <div class="fee">@ $5.50</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total-price">$5.50</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-info">
+                                    <img
+                                        src="./assets/images/image-creme-brulee-thumbnail.jpg"
+                                        alt="image-creme-brulee"
+                                    />
+                                    <div class="order-details">
+                                        <h4>Vanilla Bean Crème Brûlée</h4>
+                                        <div class="order-numberdand-fee">
+                                            <div class="number">4x</div>
+                                            <div class="fee">@ $7.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total-price">$28.00</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-info">
+                                    <img
+                                        src="./assets/images/image-panna-cotta-thumbnail.jpg"
+                                        alt="image-panna-cotta"
+                                    />
+                                    <div class="order-details">
+                                        <h4>Vanilla Panna Cotta</h4>
+                                        <div class="order-numberdand-fee">
+                                            <div class="number">2x</div>
+                                            <div class="fee">@ $6.50</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total-price">$13.00</div>
+                            </div>
+                            <div class="order-total">
+                                <p>Order Total</p>
+                                <div class="order-total-fee">$46.50</div>
+                            </div>
+                        </div>
+                        <button type="button" class="order-btn">
+                            Start New Order
+                        </button>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Green-500: hsl(158, 36%, 37%);
+    --Green-700: hsl(158, 42%, 18%);
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./font/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Fraunces;
+    src: url(./font/Fraunces/static/Fraunces_72pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fraunces-bold;
+    src: url(./font/Fraunces/static/Fraunces_72pt-Bold.ttf);
+}
+
+body {
+    background-color: var(--Cream);
+}
+
+.box {
+    width: 600px;
+    height: 450px;
+    background-color: var(--White);
+    margin: auto;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.box-left {
+    width: 300px;
+    margin-right: auto;
+    border-top-left-radius: 15px;
+    padding: 0;
+    border-bottom-left-radius: 15px;
+}
+
+.box-right {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 27px;
+}
+
+button {
+    background-color: var(--Green-500);
+    display: flex;
+    border-style: none;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 240px;
+    padding: 15px;
+    font-family: Montserrat;
+    color: var(--White);
+}
+
+button:hover {
+    background-color: var(--Green-700);
+    border-style: none;
+    transition: all 1s ease;
+}
+
+.product {
+    font-family: Montserrat;
+    display: block;
+    color: var(--Grey);
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: Fraunces-bold;
+    display: block;
+    font-size: 32px;
+    line-height: 1;
+}
+
+p {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 1.5;
+    display: block;
+    color: var(--Grey);
+}
+
+b {
+    margin-left: 10px;
+}
+
+.prices {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price {
+    font-family: Fraunces-bold;
+    color: var(--Green-500);
+    font-size: 32px;
+}
+
+.price-off {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: var(--Grey);
+    margin-left: 20px;
+}

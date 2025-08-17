@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/static/Inter-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Inter-bold;
+    src: url(../fonts/static/Inter-Bold.ttf);
+    font-weight: bold;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--grey-900);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+}
+
+.box {
+    background-color: var(--grey-800);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--white);
+    font-family: Inter;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.title {
+    display: block;
+    font-family: Inter-bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+.address {
+    display: block;
+    color: var(--green);
+    font-family: Inter-bold;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: block;
+    font-family: Inter-bold;
+    font-size: 14px;
+    background-color: var(--grey-700);
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.button:last-child {
+    margin-bottom: 0;
+}
+
+.button:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+    transition: all 1s ease;
+}
