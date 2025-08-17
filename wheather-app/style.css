@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(./assets/font/Raleway/static/Raleway-SemiBold.ttf);
+}
+
+body {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: Raleway;
+    align-items: center;
+}
+
+.search-city {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    .city-input {
+        border-radius: 8px;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        width: 500px;
+        font-family: Raleway;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: fit-content;
+        padding: 5px 20px;
+        background-color: teal;
+        border: 1px solid teal;
+        color: white;
+        border-radius: 8px;
+        height: 30px;
+        font-family: Raleway;
+        font-size: 14px;
+    }
+}
+
+.weather-section {
+    width: 70%;
+    /* height: 500px; */
+    padding: 30px;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(75, 75, 75, 0.5);
+    display: flex;
+    flex-direction: column;
+
+    .weather-schema {
+        /* border-bottom: 1px solid rgb(30, 30, 30); */
+        height: 66%;
+        display: flex;
+        justify-content: space-between;
+        .right-schema {
+            text-align: center;
+            width: 50%;
+            .temp {
+                font-size: 72px;
+            }
+        }
+
+        .left-schema {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 50%;
+            gap: 15px;
+            .city-name {
+                font-size: 32px;
+            }
+
+            .condition {
+                font-size: 32px;
+            }
+
+            .weather-image {
+                width: 150px;
+                height: 150px;
+                /* border: 1px solid rgb(30, 30, 30); */
+                /* border-radius: 50%; */
+            }
+        }
+    }
+
+    .weather-details {
+        height: 33%;
+        display: flex;
+        padding-top: 20px;
+        gap: 20px;
+        /* border-top: 1px solid rgb(30, 30, 30); */
+
+        .humidity {
+            width: 50%;
+
+            /* border-right: 1px solid rgba(50, 50, 50, 0.5); */
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-size: 40px;
+            background-color: #f7f7f7;
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .wind {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-size: 40px;
+            background-color: #f7f7f7;
+            border-radius: 16px;
+            padding: 20px;
+        }
+    }
+
+    .time {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 30px;
+    }
+}
+
+.sunny {
+    background-image: linear-gradient(to right, yellow, orange);
+}
+
+.cloudy {
+    background-color: gray;
+}
+
+.partly-cloudy {
+    background-color: cyan;
+}
+
+.rainy {
+    background-image: linear-gradient(to right, cyan, grey);
+}
+
+.dust {
+    background-color: darkgoldenrod;
+}
+
+.sultry {
+    background-color: navy;
+    /* color: white; */
+}
+
+@media (max-width: 992px) {
+    .search-city {
+        .city-input {
+            width: 300px;
+        }
+    }
+
+    .weather-section {
+        .weather-schema {
+            height: 66%;
+            .right-schema {
+                .temp {
+                    font-size: 60px;
+                }
+            }
+
+            .left-schema {
+                .city-name {
+                    font-size: 24px;
+                }
+
+                .condition {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .weather-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .humidity {
+                width: 100%;
+                font-size: 32px;
+                padding: 15px;
+            }
+
+            .wind {
+                width: 100%;
+                font-size: 32px;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .search-city {
+        .city-input {
+            width: 150px;
+        }
+    }
+
+    .weather-section {
+        width: 80%;
+        .weather-schema {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .right-schema {
+                width: 100%;
+
+                .temp {
+                    font-size: 24px;
+                    background-color: #f7f7f7;
+                    border-radius: 16px;
+                    padding: 20px;
+                }
+            }
+
+            .left-schema {
+                width: 100%;
+                align-items: center;
+            }
+        }
+
+        .weather-details {
+            .humidity {
+                font-size: 24px;
+            }
+
+            .wind {
+                font-size: 24px;
+            }
+        }
+    }
+}
